@@ -80,6 +80,20 @@ Webアプリケーションのバックエンドエンジニアですが、い�
 
 
 
+//embed{
+    \begin{minipage}{.1\linewidth}
+        \centering
+        \includegraphics[width=.75\linewidth]{images/contributors/camomile_cafe.jpg}
+    \end{minipage}
+    \begin{minipage}{.89\linewidth}
+        Camo @camomile_cafe https://x.com/camomile_cafe\\
+        \end{minipage}
+    \hspace{1ex}
+//}
+フリーランスでフロントエンドエンジニアをしている外国人です。毎日完全燃焼したい気持ちで過ごしています。朝型人間で21時あたりには寝る生活をしています。
+
+
+
 == 表紙イラスト・デザイン　
 //embed{
     \begin{minipage}{.1\linewidth}
