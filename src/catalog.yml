@@ -16,6 +16,7 @@ CHAPS:
       # catalogには変換後のreファイルを記述してください。
       - ponyoxa1.re
       - yuuki-increase-study-time.re
+      - tark.re
 
   # 2部 友人
   #- chap-friend-00-index.re:

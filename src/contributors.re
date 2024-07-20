@@ -78,6 +78,18 @@ Webアプリケーションのバックエンドエンジニアですが、い�
 //}
 都内でJavaエンジニアをしています。雪香（せっか）という個人サークルで『見に行こう！ コンピュータ史料展示マップ〜関東編〜』という本も出しました。
 
+//embed{
+    \begin{minipage}{.1\linewidth}
+        \centering
+        \includegraphics[width=.75\linewidth]{images/contributors/tark_icon.jpg}
+    \end{minipage}
+    \begin{minipage}{.89\linewidth}
+        ターク @tark\_ann https://twitter.com/tark\_ann\\
+        \end{minipage}
+    \hspace{1ex}
+//}
+北の大地でiOSエンジニアをしています。カンファレンスのカメラマンスタッフをやったりコミュニティ活動もやっていたりします。
+
 
 
 == 表紙イラスト・デザイン　
