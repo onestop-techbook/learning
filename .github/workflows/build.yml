@@ -14,8 +14,10 @@ jobs:
       # check-catalogでmdファイルが書いてないか確認する
       - name: Convert MD to Re:VIEW
         run: |
-          sh .github/scripts/convert-markdown.sh
-          ls src/*.re
+          cd ./src
+          sh md2review.sh
+          ls *.re
+          cd ..
       - name: Create PDF
         run: |
           cd src
