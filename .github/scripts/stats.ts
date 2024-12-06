@@ -82,7 +82,7 @@ async function main(statsFile: string, yamlFile: string) {
   if (currentChapterCount > previousStats.chapterCount) {
     console.log("Change detected. Sending notification...");
     const message = buildMessage(previousStats.chapterCount, currentChapterCount)
-    await sendSlackNotification(webhookUrl, message);
+    // await sendSlackNotification(webhookUrl, message);
   } else {
     console.log("No increase in chapter count.");
   }

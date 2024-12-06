@@ -4,6 +4,9 @@ on:
   schedule:
     - cron: '0 9 * * *'
   workflow_dispatch:
+  push:
+    branches:
+      - cache
 
 jobs:
   check-env:
@@ -41,13 +44,13 @@ jobs:
       # 前回のデータをキャッシュから復元
       - name: Restore cache
         uses: actions/cache@v3
-        id: cache
         with:
           path: stats_cache.json
           key: daily_stats
 
       - name: Initialize stats_cache.json if not restored
         run: |
+          cat stats_cache.json
           if [ ! -f stats_cache.json ]; then
             echo '{"chapterCount": 0}' > stats_cache.json
           fi
@@ -58,3 +61,13 @@ jobs:
         run: |
           deno run --allow-read --allow-write --allow-env --allow-net .github/scripts/stats.ts \
             stats_cache.json src/catalog.yml
+
+      - name: Print chapter count
+        run: |
+          cat stats_cache.json
+
+      - name: Save cache
+        uses: actions/cache@v3
+        with:
+          path: stats_cache.json
+          key: daily_stats
