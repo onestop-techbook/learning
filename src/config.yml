@@ -16,7 +16,7 @@ debug: null
 stylesheet: ["style.css"]
 epubversion: 3
 htmlversion: 5
-toclevel: 2
+toclevel: 1
 secnolevel: 3
 toc: true
 cover: null
